@@ -1,4 +1,4 @@
-# Company-homepage-with-flexbox
+# Roberts Baked Goods
 
 Excluding a very basic homepage in HTML and CSS, this is my very first project, and very first repository posted on GitHub.
 Additionally, I just realized, this is of course also my very first READ-ME file...COOL...:-D
