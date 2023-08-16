@@ -1,0 +1,244 @@
+/* Universal styles */
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair', serif;
+}
+  
+html {
+    background-color: ghostwhite;
+    font-size: 16px;
+}
+
+body {
+    max-width: 1200px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5rem;
+    font-style: italic;
+    padding: 1rem;
+    border: 1px solid hsla(31, 100%, 31%, 1);
+    background-image: url(../Images/seamless-white-interlaced-rounded-arc-patterned-background_53876-97975.avif);
+    color: hsla(31, 100%, 31%, 1);
+    margin-top: 20px;
+    line-height: 5rem;
+}
+
+/* Nav section */
+
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    border-bottom: 3px solid hsla(31, 100%, 31%, 1);
+}
+
+nav img {
+    margin-left: 10px;
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    margin-right: 0;
+}
+
+nav li {
+    list-style: none;
+    padding-left: 2rem;
+    font-size: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Welcome section */
+
+.welcome {
+    margin-top: 10px;
+    background-image: url('../Images/Background.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8rem 2rem;
+    width: 100%;
+}
+
+.welcometext {
+    display: inline-block;
+    background-color: hsl(208, 100%, 97%, 80%);
+}
+
+.welcometext h2, h4 {
+    font-weight: 500;
+}
+
+/* Description section */
+
+.description {
+    text-align: center;
+    padding: 2rem;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.description p {
+    font-weight: 400;
+    width: 90%;
+    font-size: 1.4rem;
+    padding: 30px;
+}
+
+
+/*Donut and Bagel galleries*/
+
+.doughnut h2, .bagel h2 {
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.gallery-item {
+  margin: 10px;
+}
+
+.gallery-item .thumbnail {
+    max-width: 15.625rem;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+figcaption {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.location {
+    margin-top: 3rem;
+    line-height: 1.5;
+    display: flex;
+}
+
+.location img {
+    max-width: 500px;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.locationtext {
+    width: 100%;
+    margin-left: 50px;
+}
+
+.location h3 {
+    padding-top: 20px;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.location ul {
+    padding-top: 20px;
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+
+
+/* Footer */
+
+footer {
+    display: inline-block;
+    margin-top: 3rem;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+}
+
+footer p {
+    margin: 20px 0px;
+    text-align: left;
+}
+
+.details {
+    list-style-type: none;
+    text-align: left;
+}
+
+.details li{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+#copyright {
+    margin-top: 20px;
+}
+
+
+
+/*Responsive design*/
+
+@media only screen and (max-width: 480px) {
+    .location img {
+        display: none;
+    }
+    footer {
+        text-align: center;
+    }
+    .description {
+        padding: 0.5rem;
+    }
+    .description p {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    nav li {
+        font-size: 1rem;
+        padding-left: 0.5rem;
+    }
+    .location img {
+        max-width: 250px;
+    }
+    .location h3 {
+        padding-top: 0px;
+    }
+}
